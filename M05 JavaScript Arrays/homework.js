@@ -3,13 +3,15 @@
 function devolverPrimerElemento(array) {
    // Retornar el primer elemento del arreglo recibido por parámetro.
    // Tu código:
-   return array.shift();
+   return array[0];
 }
 
 function devolverUltimoElemento(array) {
    // Retornar el último elemento del arreglo recibido por parámetro.
    // Tu código:
-   return array.pop();
+   const ultimoElemento = array.length -1;
+   return array[ultimoElemento]
+
 }
 
 function obtenerLargoDelArray(array) {
@@ -66,6 +68,8 @@ function arrayContiene(array, elemento) {
       }
    }
    return false
+  
+   // return array.includes(elemento)
    
 }
 function agregarNumeros(arrayOfNums) {
@@ -77,6 +81,11 @@ function agregarNumeros(arrayOfNums) {
    suma = suma + arrayOfNums[i];
  }
 return suma;
+//arrayOfNums.forEach((elem)=>{
+// total += elem;
+// })
+// return total;
+
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -96,9 +105,14 @@ function numeroMasGrande(arrayOfNums) {
    // Retornar el número más grande.
    // Tu código:
    var mayorNum = arrayOfNums[0]
+   // se le asigna el valor de la primera posicion de arrayOfNums
+   //a mayorNum
    for (i = 1; i < arrayOfNums.length; i++){
       if (arrayOfNums[i] > mayorNum) {
+         // si alguno de los elementos de arrayOfNums es mayor 
+         // al valor del primer elemento
          mayorNum = arrayOfNums[i];
+         //convierte a mayorNum en ese elemento
       }
    }
    return mayorNum;
@@ -110,7 +124,7 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
-   if (arguments.length < 1) return 0;
+   if (arguments.length === 0) return 0;
    var Max = 1;
    for (i = 0; i < arguments.length; i++){
       Max = Max * arguments[i];
@@ -124,7 +138,8 @@ function cuentoElementos(array) {
    var contador = 0;
    for (i = 0; i < array.length; i++){
       if (array[i] > 18){
-         contador ++
+         contador++
+         // + 1
       }
    } return contador;
 }
@@ -224,6 +239,11 @@ function breakStatement(num) {
    // la ejecución y retornar el string: "Se interrumpió la ejecución".
    // [PISTA]: utiliza el statement 'break'.
    // Tu código:
+   var nuevoArreglo = []
+   for (let i = 0; i <= 10; i= i + 2){
+      return nuevoArreglo.push(num)
+   } 
+
 }
 
 function continueStatement(num) {

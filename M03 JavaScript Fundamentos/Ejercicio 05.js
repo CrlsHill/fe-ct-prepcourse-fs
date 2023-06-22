@@ -77,7 +77,7 @@ function esVocal(letra) {
  }
    return 'Dato incorrecto'
  }
-    
+  
  
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
