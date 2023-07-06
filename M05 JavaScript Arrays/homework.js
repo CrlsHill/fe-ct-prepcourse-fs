@@ -241,8 +241,8 @@ function breakStatement(num) {
    // Tu código:
    var nuevoArreglo = []
    for (let i = 0; i <= 10; i= i + 2){
-      return nuevoArreglo.push(num)
-   } 
+       nuevoArreglo.push(num)
+   } if 
 
 }
 

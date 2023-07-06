@@ -119,10 +119,6 @@ function agregarAmigo(objetoUsuario, nuevoAmigo) {
    
    objetoUsuario.amigos.push(nuevoAmigo);
    return objetoUsuario;
-   
-
-
-
 }
 
 function pasarUsuarioAPremium(objetoMuchosUsuarios) {
@@ -147,9 +143,7 @@ function sumarLikesDeUsuario(objetoUsuario) {
    for (let i = 0 ; i < objetoUsuario.posts.length; i++){
       suma = suma + objetoUsuario.posts[i].likes;
    };
-   return suma;
-      
-   
+   return suma;   
 }
 
 function agregarMetodoCalculoDescuento(objetoProducto) {
